@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4cc266f988.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+    <div class = container>
+        <div class = header>
+            MENU DE FATURAS
+        </div>
+
+        <div id="checkPimpsDK">
+            <input class="checkbox" id="checkbox" type="checkbox" name="" id="">
+            <label for="checkbox" class="label">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+                <div class="ball"></div>
+            </label>
+        </div>
+
+        <div class="containerMenu">
+            <div class="informe">Passaporte</div>
+            <input class="textarea" id="passaporte" type="number" placeholder="Digite o passaporte de quem irá receber">
+        </div>
+        
+        <div class="containerMenu">
+            <div class="informe">Valor</div>
+            <input class="textarea" id="valor" type="number" placeholder="Digite valor da fatura">
+        </div>
+        
+        <div class="containerMenu">
+            <div class="informe">Motivo</div>
+            <input class="textarea" id="motivo" type="text" placeholder="Digite o motivo da fatura">
+        </div>        
+
+        <div class="containerMenu">
+            <div class="informe">Observação</div>
+            <input class="textarea" id="description" type="text" placeholder="Digite a descrição da fatura">
+        </div>
+
+        <div id="remendo"></div>
+
+        <div id="remendo2"></div>
+        
+ 
+        <div id="containerButtons">
+            <div class="clickbutton" id="enviar">Enviar</div>
+            <div class="clickbutton" id="fechar">Fechar</div>
+        </div>
+        
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="jquery.js" type="text/javascript"></script>
+    <script src="dkm.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9.15.1/dist/sweetalert2.all.min.js"></script>
+</body>
+</html>

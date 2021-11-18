@@ -1,0 +1,218 @@
+* {  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+.container {
+    width: 500px;
+    height: 500px;
+    background-color:#F2F3F4;
+    border: 2px solid rgba(45, 147, 207,1);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    display: block;
+    position: fixed;
+    transition: 0.2s linear;
+    z-index: 1;
+}
+
+.header {
+    height: 50px;
+    width: 497px;
+    background-color: rgba(45, 147, 207,1);
+    color: rgb(28, 40, 51,1);
+    border-radius: 5px 5px 0px 0px;
+    justify-content: center;
+    font-size: 25px;
+    text-align: center;
+    line-height: 50px;
+    font-family: Impact;
+    transition: 0.2s linear;
+}
+
+.informe {
+    font-family: Impact;
+    font-size: 24px;
+    justify-content: center;
+    text-align: center;
+    color: rgb(28, 40, 51,1);
+    margin-top: 25px;
+    margin-bottom: 20px;
+    transition: 0.2s linear;
+}
+
+.fa-window-close {
+    position: absolute;
+    right: 10px;
+    top: 14px;
+    font-size: 26px;
+}
+
+.containerMenu {
+    margin: 0 auto;
+    max-width: 250px;
+}
+
+.textarea {
+    width: 250px;
+    padding: 4px 2px;
+    border-radius: 16px;
+}
+
+#remendo {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20px;
+    margin: 22px 0 0 0;
+    background-color: #F2F3F4;
+    position: absolute;
+    border-radius: 10px;
+    transition: 0.2s linear;
+    z-index: 4;
+}
+
+#remendo2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 40px solid rgba(45, 147, 207,1);
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    height: 0;
+    margin: 24px auto 0;
+    width: 272px;
+    z-index: 1;
+}
+
+#containerButtons {
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: -102px auto 0;
+    max-width: 330px;
+    border-top: 100px solid #F2F3F4;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    height: 0;
+    transition: 0.2s linear;
+    z-index: 3;
+}
+
+.clickbutton {
+    width: 100px;
+    background-color: rgba(45, 147, 207,1);
+    color:rgba(0, 0, 0, 0.63);
+    font-size: 16px;
+    text-align: center;
+    line-height: 160%;
+    border-radius: 16px;
+    margin: 0 auto 40px;
+    font-family: Impact;
+    box-shadow: 0 0 8px black;
+    transition: background 300ms linear;
+    z-index: 4;
+}
+
+.clickbutton:hover {
+    background-color: #008744;
+    transition: background 300ms linear;
+}
+
+.clickbutton:active {
+    background-color: #e97070;
+    box-shadow: 0 0 4px inset black,
+        0 0 4px black;
+    transition: background 300ms linear;
+}
+
+/* PLACE FUCKING HOLDER*/
+
+::placeholder {
+    text-align: center;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+/* ARROWS */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* DARK MODE*/
+
+#checkPimpsDK {
+    position: absolute;
+    right: 14px;
+    top: 13px;
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.label {
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 50px;
+    position: relative;
+    padding: 5px;
+    height: 26px;
+    width: 50px;
+}
+
+.ball {
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 3px;
+    left: 2px;
+    height: 20px;
+    width: 20px;
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+    transform: translateX(24px);
+}
+
+.fa-moon {
+    color: #f1c40f;
+}
+
+.fa-sun {
+    color: #f39c12;
+}
+
+/* DARK MODE COLORS */
+
+.dark.container,
+.dark #remendo {
+    background-color:#121212;
+    transition: 0.2s linear;
+}
+
+.dark .textarea{
+    background-color: #646464;
+    color:white;
+}
+.dark .header,
+.dark .informe {
+    color: white;
+}
+
+.dark #containerButtons {
+    border-top: 100px solid #121212;
+    transition: 0.2s linear;
+}
